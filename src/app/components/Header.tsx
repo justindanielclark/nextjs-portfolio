@@ -6,15 +6,8 @@ import { usePathname } from "next/navigation";
 
 function Header() {
   const pathname = usePathname();
-  console.log(pathname);
-  let [atHome, atProjects, atBlog] = [false, false, false];
-  if (pathname.slice(0, 5) === "/blog") {
-    atBlog = true;
-  } else if (pathname.slice(0, 9) === "/projects") {
-    atProjects = true;
-  } else {
-    atHome = true;
-  }
+  const [atProjects, atBlog] = [pathname.slice(0, 9) === "/projects", pathname.slice(0, 5) === "/blog"];
+
   return (
     <header className="bg-slate-700 z-10">
       <Container>
@@ -22,7 +15,7 @@ function Header() {
           <nav>
             <ul className="flex flex-row gap-4">
               <Link href={"/"}>
-                <li className={atHome ? "underline underline-offset-4" : ""}>Home</li>
+                <li className={!atProjects && !atBlog ? "underline underline-offset-4" : ""}>Home</li>
               </Link>
               <Link href={"/projects"}>
                 <li className={atProjects ? "underline underline-offset-4" : ""}>Projects</li>

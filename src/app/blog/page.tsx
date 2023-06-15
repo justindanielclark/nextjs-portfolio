@@ -10,7 +10,7 @@ export default async function Blog() {
   }
   return (
     <>
-      <h2 className="text-4xl font-bold text-white/90">Blog</h2>
+      <h2>Posts by Date:</h2>
       <ul className="w-full list-none p-0">
         {posts.map((post) => (
           <ListItem key={post.id} post={post} />

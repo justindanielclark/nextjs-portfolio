@@ -8,7 +8,7 @@ export default function Video({ id }: Props) {
       <iframe
         src={`https://www.youtube.com/embed/${id}`}
         title="YouTube Video Player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
       />
     </div>
   );
