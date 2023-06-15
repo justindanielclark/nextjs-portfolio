@@ -1,31 +1,28 @@
 "use client";
-import { useState, useEffect } from "react";
 import Image from "next/image";
-import SlideContainer from "./shared/components/SlideContainer";
+import SlideContainer from "./components/SlideContainer";
 import welcomeImage from "../../public/images/welcome-image1000x1000.jpg";
-import { IconContext } from "react-icons";
-import IconTypescript from "./shared/components/Icons/IconTypescript";
-import IconJavascript from "./shared/components/Icons/IconJavascript";
-import IconHTML from "./shared/components/Icons/IconHTML";
-import IconCSS from "./shared/components/Icons/IconCSS";
-import IconSass from "./shared/components/Icons/IconSass";
-import IconJest from "./shared/components/Icons/IconJest";
-import IconNext from "./shared/components/Icons/IconNext";
-import IconExpress from "./shared/components/Icons/IconExpress";
-import IconNode from "./shared/components/Icons/IconNode";
-import IconMongoDB from "./shared/components/Icons/IconMongoDB";
-import IconMysql from "./shared/components/Icons/IconMySQL";
-import IconGit from "./shared/components/Icons/IconGit";
-import IconGithub from "./shared/components/Icons/IconGithub";
-import IconTailwindcss from "./shared/components/Icons/IconTailwind";
-import IconReact from "./shared/components/Icons/IconReact";
+import IconTypescript from "./components/Icons/IconTypescript";
+import IconJavascript from "./components/Icons/IconJavascript";
+import IconHTML from "./components/Icons/IconHTML";
+import IconCSS from "./components/Icons/IconCSS";
+import IconSass from "./components/Icons/IconSass";
+import IconJest from "./components/Icons/IconJest";
+import IconNext from "./components/Icons/IconNext";
+import IconExpress from "./components/Icons/IconExpress";
+import IconNode from "./components/Icons/IconNode";
+import IconMongoDB from "./components/Icons/IconMongoDB";
+import IconMysql from "./components/Icons/IconMySQL";
+import IconGit from "./components/Icons/IconGit";
+import IconGithub from "./components/Icons/IconGithub";
+import IconTailwindcss from "./components/Icons/IconTailwind";
+import IconReact from "./components/Icons/IconReact";
 
 const ICON_CLASSES = "w-20 h-20";
 
 export default function Home() {
-  const [] = useState();
   return (
-    <>
+    <main className="flex flex-col gap-10 flex-1 z-10 overflow-hidden">
       <SlideContainer id="firstSlide" className="relative flex flex-col justify-between gap-2">
         <div className="flex flex-col md:flex-row flex-1 items-center gap-6">
           <div className="basis-1/3 max-h-96 md:basis-1/2">
@@ -130,6 +127,6 @@ export default function Home() {
           Next
         </button>
       </SlideContainer>
-    </>
+    </main>
   );
 }

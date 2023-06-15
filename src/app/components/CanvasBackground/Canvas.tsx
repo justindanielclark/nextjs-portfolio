@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import Orb from "./Orb";
 import SpatialHashGrid from "./SpatialHashGrid";
-import useDebounce from "../../utils/useDebouncer";
+import useDebounce from "../../../lib/useDebouncer";
 
 type Color = {
   r: number;

@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "./Container";
+import Container from "../../lib/sharedComponents/Container";
 import Image from "next/image";
 import Link from "next/link";
 import { SiGithub } from "react-icons/si";
