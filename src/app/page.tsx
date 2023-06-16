@@ -22,7 +22,7 @@ const ICON_CLASSES = "w-20 h-20";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-10 flex-1 z-10 overflow-hidden">
+    <main className="flex flex-col flex-1 z-10 overflow-hidden">
       <SlideContainer id="firstSlide" className="relative flex flex-col justify-between gap-2">
         <div className="flex flex-col md:flex-row flex-1 items-center gap-6">
           <div className="basis-1/3 max-h-96 md:basis-1/2">
