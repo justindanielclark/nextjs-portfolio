@@ -8,6 +8,9 @@ export default async function Blog() {
   if (!posts) {
     return <p className="mt-10 text-center">Sorry, no posts available.</p>;
   }
+  const sortedPosts = posts.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
   return (
     <>
       <h2>Posts by Date:</h2>
