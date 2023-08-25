@@ -4,7 +4,7 @@ type Props = {
 };
 
 function Container({ children, className }: Props) {
-  const classes = ["p-2", "mx-auto", "max-w-3xl", "z-10"];
+  const classes = ["px-4", "py-2", "mx-auto", "max-w-5xl", "z-10"];
   if (className) {
     classes.push(...className.split(" "));
   }
