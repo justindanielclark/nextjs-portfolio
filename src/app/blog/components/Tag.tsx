@@ -1,7 +1,17 @@
 import React from "react";
 import Link from "next/link";
 
-const preDefinedTagNames = ["default", "nextjs", "tailwindcss", "react"] as const;
+const preDefinedTagNames = [
+  "default",
+  "nextjs",
+  "tailwindcss",
+  "react",
+  "leetcode",
+  "neetcode",
+  "easy",
+  "medium",
+  "hard",
+] as const;
 type TagName = (typeof preDefinedTagNames)[number];
 type PredefinedTag = {
   textColor: string; //TailwindClass
@@ -19,6 +29,26 @@ preDefinedTags.set("react", {
 preDefinedTags.set("tailwindcss", {
   bgColor: "bg-white",
   textColor: "text-cyan-600",
+});
+preDefinedTags.set("leetcode", {
+  bgColor: "bg-black",
+  textColor: "text-yellow-500",
+});
+preDefinedTags.set("neetcode", {
+  bgColor: "bg-black",
+  textColor: "text-cyan-600",
+});
+preDefinedTags.set("easy", {
+  bgColor: "bg-green-500",
+  textColor: "text-green-950",
+});
+preDefinedTags.set("medium", {
+  bgColor: "bg-yellow-500",
+  textColor: "text-yellow-950",
+});
+preDefinedTags.set("hard", {
+  bgColor: "bg-red-500",
+  textColor: "text-red-950",
 });
 preDefinedTags.set("default", {
   bgColor: "bg-white",
