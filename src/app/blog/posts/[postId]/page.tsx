@@ -3,8 +3,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Tag from "../../components/Tag";
 
-export const revalidate = 86400;
-
 type Props = {
   params: {
     postId: string;
