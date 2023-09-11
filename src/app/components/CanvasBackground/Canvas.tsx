@@ -28,10 +28,9 @@ const COLOR_DIFF: Color = {
   b: LIGHT_COLOR.b - DARK_COLOR.b,
 };
 //Num Px Area Required Per Orb
-const ORB_COEFF = 20000;
+const ORB_COEFF = 17500;
 
 //Delay for lines to start fading into full color in ms
-let current_time_since_refresh = 0;
 const DELAY_ON_START = 1000;
 const DELAY_TOTAL = 2000;
 

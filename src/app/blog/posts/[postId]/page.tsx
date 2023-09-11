@@ -59,10 +59,10 @@ export default async function Post({ params: { postId } }: Props) {
           <span className="block basis-10 shrink-0 grow-0">✉️</span>
           <span className="block basis-full grow-1">Back to Posts </span>
         </Link>
-        <Link href={"/"} className="flex flex-row w-full hover:bg-slate-700/80 no-underline p-2">
+        {/* <Link href={"/"} className="flex flex-row w-full hover:bg-slate-700/80 no-underline p-2">
           <span className="block basis-10 shrink-0 grow-0">🏠</span>
           <span className="block basis-full grow-1">Back to Home </span>
-        </Link>
+        </Link> */}
       </div>
     </>
   );
